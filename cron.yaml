@@ -1,0 +1,5 @@
+cron:
+- description: daily job
+  url: /.*
+  schedule: every 1 minutes
+  timezone: Asia/Shanghai

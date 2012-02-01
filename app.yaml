@@ -1,0 +1,28 @@
+application: miaoapp2
+version: 1
+runtime: python
+api_version: 1
+
+
+inbound_services:
+- xmpp_message
+
+handlers:
+- url: /_ah/xmpp/message/chat/
+  script: xmpp_handler.py
+  
+- url: /css
+  static_dir: css
+ 
+- url: /
+  script: main.py
+
+- url: /main
+  script: main.py
+
+- url: /sign
+  script: main.py
+
+- url: /maina
+  script: main.py
+
